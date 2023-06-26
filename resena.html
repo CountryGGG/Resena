@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reseñas de Destinos</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #FFC3A0 0%, #FFAFBD 100%);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* Estilos para el formulario de reseñas */
+    form {
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #ff8753;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    /* Estilos para mostrar las opiniones */
+    .reviews {
+      margin-top: 30px;
+    }
+
+    .review {
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .review h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .review p {
+      margin: 0;
+      margin-top: 5px;
+      color: #777;
+    }
+
+    /* Estilos para el footer */
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #777;
+      background: linear-gradient(135deg, #FFC3A0 0%, #FFAFBD 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Reseñas de Destinos</h1>
+
+    <!-- Formulario de reseñas -->
+    <form>
+      <label for="category">Categoría:</label>
+      <select id="category" name="category">
+        <option value="destino">Destino</option>
+        <option value="hotel">Hotel</option>
+        <option value="restaurante">Restaurante</option>
+        <option value="actividad">Actividad</option>
+      </select>
+
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="rating">Calificación:</label>
+      <select id="rating" name="rating" required>
+        <option value="1">1 Estrella</option>
+        <option value="2">2 Estrellas</option>
+        <option value="3">3 Estrellas</option>
+        <option value="4">4 Estrellas</option>
+        <option value="5">5 Estrellas</option>
+      </select>
+
+      <label for="review">Reseña:</label>
+      <textarea id="review" name="review" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Mostrar las opiniones -->
+    <div class="reviews">
+      <div class="review">
+        <h3>Destino 1</h3>
+        <p>Calificación: 4 Estrellas</p>
+        <p>Reseña: ¡Fue un viaje increíble! Lo recomendaría a todos.</p>
+      </div>
+      <div class="review">
+        <h3>Hotel 1</h3>
+        <p>Calificación: 5 Estrellas</p>
+        <p>Reseña: Excelente servicio y comodidades. ¡Volveré nuevamente!</p>
+      </div>
+      <!-- Agrega más opiniones aquí -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Reseñas de Destinos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
